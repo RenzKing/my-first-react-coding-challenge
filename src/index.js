@@ -2,21 +2,22 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 
-//COMPONENTS//
+// COMPONENTS //
+
 function App() {
   return (
     <div className="card">
       <Avatar />
-      <Intro />
-      <SkillList />
-
-      <div className="data"></div>
+      <div className="data">
+        <Intro />
+        <SkillList />
+      </div>
     </div>
   );
 }
 
 function Avatar() {
-  return <img className="avatar" src="/pic.jpg" alt="renz" />;
+  return <img className="avatar" src="/pic.jpg" alt="Renz King Gayacao" />;
 }
 
 function Intro() {
@@ -28,7 +29,7 @@ function Intro() {
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and
         scrambled it to make a type specimen book. It has survived not only five
-        centuries
+        centuries,{" "}
       </p>
     </div>
   );
@@ -37,11 +38,10 @@ function Intro() {
 function SkillList() {
   return (
     <div className="skill-list">
-      <Skill skill="React" emoji="💪" color="blue" />
-      <Skill skill="HTML" emoji="💪" color="red" />
-      <Skill skill="CSS" emoji="💪" color="orange" />
-      <Skill skill="JS" emoji="💪" color="yellow" />
-      <Skill skill="GIT" emoji="💪" color="gray" />
+      <Skill skill="HTML" color="red" emoji="💪" />
+      <Skill skill="CSS" color="orange" emoji="💪" />
+      <Skill skill="JAVASCRIPT" color="yellow" emoji="💪" />
+      <Skill skill="REACT" color="blue" emoji="💪" />
     </div>
   );
 }
@@ -51,36 +51,10 @@ function Skill(props) {
     <div className="skill" style={{ backgroundColor: props.color }}>
       <span>{props.skill}</span>
       <span>{props.emoji}</span>
+      {props.color}
     </div>
   );
 }
-
-// function Buttons() {
-//   return <Button color="red" name="HTML" />;
-//   <Button color={{ color: "red" }} name="CSS" />;
-// }
-
-// function Button() {
-//   return (
-//     <div>
-//       <button>BTN</button>
-//     </div>
-//   );
-// }
-
-// function Text() {
-//   return (
-//     <p>Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsum Lorem ipsum</p>
-//   );
-// }
-
-// function Name() {
-//   return <h1>Renz King Gayacao</h1>;
-// }
-
-// function Image() {
-//   return <img src="public/logo192.png" alt="pic" />;
-// }
 
 //RENDER ROOT//
 const root = ReactDOM.createRoot(document.getElementById("root"));
