@@ -56,7 +56,50 @@ import "./index.css";
 //   );
 // }
 
-//RENDER ROOT//
+// function App() {
+//   return (
+//     <div className="card">
+//       <Avatar />
+//       <div className="data">
+//         <Intro />
+//         <SkillList />
+//       </div>
+//     </div>
+//   );
+// }
+
+// function Avatar() {
+//   return <img className="avatar" src="/pic.jpg" alt="Renz" />;
+// }
+
+// function Intro() {
+//   return (
+//     <div>
+//       <h1>Renz King Gayacao</h1>
+//       <p>Lorem ipsum lorem ipsum lorem ipsum</p>
+//     </div>
+//   );
+// }
+
+// function SkillList() {
+//   return (
+//     <div className="skill-list">
+//       <Skill name="HTML" emoji="💪" color="red" />
+//       <Skill name="CSS" emoji="💪" color="brown" />
+//       <Skill name="JAVASCRIPT" emoji="💪" color="yellow" />
+//       <Skill name="REACT" emoji="💪" color="blue" />
+//       <Skill name="GIT" emoji="💪" color="gray" />
+//     </div>
+//   );
+// }
+// function Skill(props) {
+//   return (
+//     <div className="style" style={{ backgroundColor: props.color }}>
+//       {props.name}
+//       {props.emoji}
+//     </div>
+//   );
+// }
 
 function App() {
   return (
@@ -71,14 +114,14 @@ function App() {
 }
 
 function Avatar() {
-  return <img className="avatar" src="/pic.jpg" alt="Renz" />;
+  return <img className="avatar" src="/pic.jpg" alt="Renz King Gayacao" />;
 }
 
 function Intro() {
   return (
     <div>
       <h1>Renz King Gayacao</h1>
-      <p>Lorem ipsum lorem ipsum lorem ipsum</p>
+      <p>sdfasdfas asfasf asdfadfasdfadsfa asdfa asdfa afasadfa</p>
     </div>
   );
 }
@@ -86,22 +129,24 @@ function Intro() {
 function SkillList() {
   return (
     <div className="skill-list">
-      <Skill name="HTML" emoji="💪" color="red" />
-      <Skill name="CSS" emoji="💪" color="brown" />
-      <Skill name="JAVASCRIPT" emoji="💪" color="yellow" />
-      <Skill name="REACT" emoji="💪" color="blue" />
-      <Skill name="GIT" emoji="💪" color="gray" />
+      <Skill name="HTML" color="red" emoji="😁" />
+      <Skill name="CSS" color="green" emoji="😁" />
+      <Skill name="JAVASCRIPT" color="yellow" emoji="😁" />
+      <Skill name="REACT" color="blue" emoji="😁" />
     </div>
   );
 }
+
 function Skill(props) {
   return (
-    <div className="style" style={{ backgroundColor: props.color }}>
+    <div className="skill" style={{ backgroundColor: props.color }}>
       {props.name}
       {props.emoji}
     </div>
   );
 }
+//RENDER ROOT//
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
