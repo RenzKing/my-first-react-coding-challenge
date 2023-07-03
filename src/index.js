@@ -101,53 +101,77 @@ import "./index.css";
 // //   );
 // // }
 
-// CARD CODING CHALLENGE V1 //
+// // CARD CODING CHALLENGE V1 //
+// function App() {
+//   return (
+//     <div className="card">
+//       <Avatar />
+//       <div className="data">
+//         <Intro />
+//         <SkillList />
+//       </div>
+//     </div>
+//   );
+// }
+
+// function Avatar() {
+//   return <img className="avatar" src="/pic.jpg" alt="Renz King Gayacao" />;
+// }
+
+// function Intro() {
+//   return (
+//     <div>
+//       <h1>Renz King Gayacao</h1>
+//       <p>sdfasdfas asfasf asdfadfasdfadsfa asdfa asdfa afasadfa</p>
+//     </div>
+//   );
+// }
+
+// function SkillList() {
+//   return (
+//     <div className="skill-list">
+//       <Skill name="HTML" color="red" emoji="😁" />
+//       <Skill name="CSS" color="green" emoji="😁" />
+//       <Skill name="JAVASCRIPT" color="yellow" emoji="😁" />
+//       <Skill name="REACT" color="blue" emoji="😁" />
+//     </div>
+//   );
+// }
+
+// function Skill(props) {
+//   return (
+//     <div className="skill" style={{ backgroundColor: props.color }}>
+//       {props.name}
+//       {props.emoji}
+//     </div>
+//   );
+// }
+//RENDER ROOT//
+
 function App() {
   return (
     <div className="card">
       <Avatar />
-      <div className="data">
-        <Intro />
-        <SkillList />
+      <div class="data">
+        <Introduction />
+        <Skill />
       </div>
     </div>
   );
 }
 
 function Avatar() {
-  return <img className="avatar" src="/pic.jpg" alt="Renz King Gayacao" />;
+  <img className="avatar" src="/pic.jpg" alt="Renz" />;
 }
 
-function Intro() {
-  return (
-    <div>
-      <h1>Renz King Gayacao</h1>
-      <p>sdfasdfas asfasf asdfadfasdfadsfa asdfa asdfa afasadfa</p>
-    </div>
-  );
+function Introduction() {
+  <div className="introduction">
+    <h1>Renz King</h1>
+    <p>sdfasdfas asfasf asdfadfasdfadsfa asdfa asdfa afasadfa</p>
+  </div>;
 }
 
-function SkillList() {
-  return (
-    <div className="skill-list">
-      <Skill name="HTML" color="red" emoji="😁" />
-      <Skill name="CSS" color="green" emoji="😁" />
-      <Skill name="JAVASCRIPT" color="yellow" emoji="😁" />
-      <Skill name="REACT" color="blue" emoji="😁" />
-    </div>
-  );
-}
-
-function Skill(props) {
-  return (
-    <div className="skill" style={{ backgroundColor: props.color }}>
-      {props.name}
-      {props.emoji}
-    </div>
-  );
-}
-//RENDER ROOT//
-
+//
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
