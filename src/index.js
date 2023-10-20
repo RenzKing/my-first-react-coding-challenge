@@ -1,7 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-
+import Avatar from "./components/Avatar";
+import SkillList from "./components/SkillList";
+import Intro from "./components/Intro";
 // // COMPONENTS //
 
 // // function App() {
@@ -194,51 +196,62 @@ import "./index.css";
 
 //***************************** 10/20/2023 ***************************//
 
+// function App() {
+//   return (
+//     <div className="card">
+//       <Avatar />
+
+//       <div className="data">
+//         <Introduction />
+//         <SkillList />
+//       </div>
+//     </div>
+//   );
+// }
+
+// function Avatar() {
+//   return <img className="avatar" src="/pic.jpg" alt="Renz King Gayacao" />;
+// }
+
+// function Introduction() {
+//   return (
+//     <div className="Introduction">
+//       <h1>Renz King Gayacao</h1>
+//       <p>
+//         loremIpsum,loremIpsumloremIpsum, asdfafd sdfasfasfasdfasd
+//         asdfadsfasdfasdfasfasfasfasdfas
+//       </p>
+//     </div>
+//   );
+// }
+
+// function SkillList() {
+//   return (
+//     <div className="skill-list">
+//       <Skill skill="React" emoji="💪" color="#123456" />
+//       <Skill skill="HTML+CSS" emoji="💪" color="orangered" />
+//       <Skill skill="JavaScript" emoji="💪" color="yellow" />
+//       <Skill skill="Svelte" emoji="💪" color="orange" />
+//     </div>
+//   );
+// }
+
+// function Skill(props) {
+//   return (
+//     <div className="skill" style={{ backgroundColor: props.color }}>
+//       <span>{props.skill}</span>
+//       <span>{props.emoji}</span>
+//     </div>
+//   );
+
 function App() {
   return (
     <div className="card">
       <Avatar />
-
       <div className="data">
-        <Introduction />
+        <Intro />
         <SkillList />
       </div>
-    </div>
-  );
-}
-
-function Avatar() {
-  return <img className="avatar" src="/pic.jpg" alt="Renz King Gayacao" />;
-}
-
-function Introduction() {
-  return (
-    <div className="Introduction">
-      <h1>Renz King Gayacao</h1>
-      <p>
-        loremIpsum,loremIpsumloremIpsum, asdfafd sdfasfasfasdfasd
-        asdfadsfasdfasdfasfasfasfasdfas
-      </p>
-    </div>
-  );
-}
-
-function SkillList() {
-  return (
-    <div className="skill-list">
-      <Skill skill="React" emoji="💪" color="#123456" />
-      <Skill skill="HTML+CSS" emoji="💪" color="orangered" />
-      <Skill skill="JavaScript" emoji="💪" color="yellow" />
-      <Skill skill="Svelte" emoji="💪" color="orange" />
-    </div>
-  );
-}
-
-function Skill(props) {
-  return (
-    <div className="skill" style={{ backgroundColor: props.color }}>
-      <span>{props.skill}</span>
-      <span>{props.emoji}</span>
     </div>
   );
 }
