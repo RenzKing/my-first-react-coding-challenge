@@ -102,57 +102,57 @@ import "./index.css";
 // }
 
 // CARD CODING CHALLENGE V1 //
-function App() {
-  return (
-    <div className="card">
-      <Avatar />
-      <div className="data">
-        <Intro />
-        <SkillList />
-      </div>
-    </div>
-  );
-}
+// function App() {
+//   return (
+//     <div className="card">
+//       <Avatar />
+//       <div className="data">
+//         <Intro />
+//         <SkillList />
+//       </div>
+//     </div>
+//   );
+// }
 
-function Avatar() {
-  return <img className="avatar" src="/pic.jpg" alt="Renz King Gayacao" />;
-}
+// function Avatar() {
+//   return <img className="avatar" src="/pic.jpg" alt="Renz King Gayacao" />;
+// }
 
-function Intro() {
-  return (
-    <div>
-      <h1>Renz King Gayacao</h1>
-      <p>sdfasdfas asfasf asdfadfasdfadsfa asdfa asdfa afasadfa</p>
-    </div>
-  );
-}
+// function Intro() {
+//   return (
+//     <div>
+//       <h1>Renz King Gayacao</h1>
+//       <p>sdfasdfas asfasf asdfadfasdfadsfa asdfa asdfa afasadfa</p>
+//     </div>
+//   );
+// }
 
-function SkillList() {
-  return (
-    <div className="skill-list">
-      <Skill name="HTML" color="red" emoji="😁" />
-      <Skill name="CSS" color="green" emoji="😁" />
-      <Skill name="JAVASCRIPT" color="yellow" emoji="😁" />
-      <Skill name="REACT" color="blue" emoji="😁" />
-    </div>
-  );
-}
+// function SkillList() {
+//   return (
+//     <div className="skill-list">
+//       <Skill name="HTML" color="red" emoji="😁" />
+//       <Skill name="CSS" color="green" emoji="😁" />
+//       <Skill name="JAVASCRIPT" color="yellow" emoji="😁" />
+//       <Skill name="REACT" color="blue" emoji="😁" />
+//     </div>
+//   );
+// }
 
-function Skill(props) {
-  return (
-    <div className="skill" style={{ backgroundColor: props.color }}>
-      {props.name}
-      {props.emoji}
-    </div>
-  );
-}
+// function Skill(props) {
+//   return (
+//     <div className="skill" style={{ backgroundColor: props.color }}>
+//       {props.name}
+//       {props.emoji}
+//     </div>
+//   );
+// }
 //RENDER ROOT//
 
 // function App() {
 //   return (
 //     <div className="card">
 //       <Avatar />
-//       <div class="data">
+//       <div className="data">
 //         <Introduction />
 //         <SkillList />
 //       </div>
@@ -167,7 +167,7 @@ function Skill(props) {
 //   return (
 //     <div className="introduction">
 //       <h1>Renz King</h1>
-//       <p>sdfasdfas asfasf asdfadfasdfadsfa asdfa asdfa afasadfa</p>
+//       <p>sdfasdfas asfasf asdfadfasdfadsfaasdfasdfdasfasfasfasfasfsd asdfa</p>
 //     </div>
 //   );
 // }
@@ -192,7 +192,59 @@ function Skill(props) {
 //   );
 // }
 
-//
+//***************************** 10/20/2023 ***************************//
+
+function App() {
+  return (
+    <div className="card">
+      <Avatar />
+
+      <div className="data">
+        <Introduction />
+        <SkillList />
+      </div>
+    </div>
+  );
+}
+
+function Avatar() {
+  return <img className="avatar" src="/pic.jpg" alt="Renz King Gayacao" />;
+}
+
+function Introduction() {
+  return (
+    <div className="Introduction">
+      <h1>Renz King Gayacao</h1>
+      <p>
+        loremIpsum,loremIpsumloremIpsum, asdfafd sdfasfasfasdfasd
+        asdfadsfasdfasdfasfasfasfasdfas
+      </p>
+    </div>
+  );
+}
+
+function SkillList() {
+  return (
+    <div className="skill-list">
+      <Skill skill="React" emoji="💪" color="#123456" />
+      <Skill skill="HTML+CSS" emoji="💪" color="orangered" />
+      <Skill skill="JavaScript" emoji="💪" color="yellow" />
+      <Skill skill="Svelte" emoji="💪" color="orange" />
+    </div>
+  );
+}
+
+function Skill(props) {
+  return (
+    <div className="skill" style={{ backgroundColor: props.color }}>
+      <span>{props.skill}</span>
+      <span>{props.emoji}</span>
+    </div>
+  );
+}
+
+//***************************** 10/20/2023 ***************************//
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
